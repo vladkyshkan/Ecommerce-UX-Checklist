@@ -6,12 +6,20 @@ class Category extends Component {
   render() {
     return (
       <div className="category">
-        <CategoryHeading />
+        <a id={`${this.props.details.name}`} />
+        <CategoryHeading name={this.props.details.name} />
+        <div className="category__table-titles">
+          <h5>Guideline</h5>
+          <h5>Implementation</h5>
+          <h5>Impact</h5>
+        </div>
         <div>
-          <CategoryItem />
-          <CategoryItem />
-          <CategoryItem />
-          <CategoryItem />
+          {Object.keys(this.props.details.list).map(key => (
+            <CategoryItem
+              key={key}
+              itemDetails={this.props.details.list[key]}
+            />
+          ))}
         </div>
       </div>
     );

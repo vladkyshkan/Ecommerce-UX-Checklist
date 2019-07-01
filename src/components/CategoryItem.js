@@ -21,11 +21,11 @@ class CategoryItem extends Component {
             onChange={this.handleCheckboxChange}
           />
           <span className="category-item__description">
-            Display clear CTA button above the fold
+            {this.props.itemDetails.text}
           </span>
         </label>
-        <ImplementationTag />
-        <ImpactTag />
+        <ImplementationTag details={this.props.itemDetails.implementation} />
+        <ImpactTag details={this.props.itemDetails.impact} />
       </div>
     );
   }
