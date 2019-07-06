@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(250, 250, 250, 1);
   color: rgba(58, 58, 58, 1);
-  border-top: 5px solid rgba(0, 117, 106, 1);
+  border-top: 5px solid rgba(0, 193, 147, 1);
 }
 
 @font-face {
@@ -57,7 +57,7 @@ h3 {
   font-size: 21px;
   line-height: 25px;
   font-weight: 500;
-  color: rgba(0, 117, 106, 1);
+  color: rgba(0, 193, 147, 1);
   margin: 0;
   padding-right: 24px;
 }
@@ -90,6 +90,10 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .wrapper {
@@ -162,13 +166,19 @@ input[type="text"] {
   justify-content: center;
 }
 
+.button-generic:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .button-main {
-  background-color: rgba(0, 117, 106, 1);
+  background-color: rgba(0, 193, 147, 1);
   color: white;
   border: none;
 }
 
 .button-secondary {
+  background-color: white;
   color: rgba(235, 87, 87, 1);
   border: 1px solid rgba(235, 87, 87, 1);
 }
@@ -187,7 +197,7 @@ input[type="text"] {
 
 .pattern {
   position: absolute;
-  top: 60px;
+  top: 140px;
   z-index: -1;
 }
 
@@ -211,8 +221,8 @@ a.button-nav {
 }
 
 .button-nav:hover {
-  border: 2px solid rgba(0, 117, 106, 1);
-  color: rgba(0, 117, 106, 1);
+  border: 2px solid rgba(0, 193, 147, 1);
+  color: rgba(0, 193, 147, 1);
 }
 
 .categories-list {
@@ -227,7 +237,7 @@ a.button-nav {
 }
 
 .category-heading {
-  background-color: rgba(0, 117, 106, 0.08);
+  background-color: rgba(244, 240, 235, 0.8);
   padding: 24px 32px;
   margin: 0;
   display: flex;
@@ -242,7 +252,26 @@ a.button-nav {
 }
 
 .category-progress {
+  color: rgba(87, 80, 72, 1);
   font-weight: 700;
+}
+
+.category-progress_bar {
+  width: 100px;
+  height: 4px;
+  background-color: rgba(216, 216, 216, 1);
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 12px;
+  position: relative;
+  bottom: 3px;
+}
+
+.category-progress_bar > span {
+  display: block;
+  background-color: rgba(87, 80, 72, 1);
+  height: 100%;
+  border-radius: 10px;
 }
 
 .round-button {
@@ -250,17 +279,49 @@ a.button-nav {
   height: 30px;
   border: 0;
   border-radius: 100%;
-  background-color: rgba(0, 117, 106, 0.1);
+  background-color: rgba(0, 193, 147, 0.1);
   margin-left: 24px;
   line-height: 50%;
+  position: relative;
+  display: inline-block;
 }
 
 .round-button:hover {
-  background-color: rgba(0, 117, 106, 0.2);
+  background-color: rgba(0, 193, 147, 0.2);
 }
 
 .round-button:focus {
   outline: 0;
+}
+
+.round-button .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(58, 58, 58, 1);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 12px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 160%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.round-button .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(58, 58, 58, 1) transparent transparent transparent;
+}
+
+.round-button:hover .tooltiptext {
+  visibility: visible;
 }
 
 .category__table-titles {
