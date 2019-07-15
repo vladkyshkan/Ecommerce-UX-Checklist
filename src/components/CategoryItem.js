@@ -1,31 +1,44 @@
 import React, { Component } from "react";
-import Checkbox from "./Checkbox";
 import ImplementationTag from "./ImplementationTag";
 import ImpactTag from "./ImpactTag";
 
 class CategoryItem extends Component {
-  state = {
-    checked: false
-  };
-
   handleCheckboxChange = event => {
-    this.setState({ checked: event.target.checked });
+    this.props.onChange(event.target.checked);
   };
 
   render() {
+    const { text, implementation, impact, isChecked } = this.props.details;
+
     return (
       <div className="category-item">
-        <label>
-          <Checkbox
-            checked={this.state.checked}
+        <label className="category-checkbox">
+          <input
+            type="checkbox"
+            className="checkbox-hidden"
             onChange={this.handleCheckboxChange}
+            // checked={}
           />
-          <span className="category-item__description">
-            {this.props.itemDetails.text}
-          </span>
+          <span className="checkbox-visible" />
+          <span className="category-item__description">{text}</span>
         </label>
-        <ImplementationTag details={this.props.itemDetails.implementation} />
-        <ImpactTag details={this.props.itemDetails.impact} />
+        <ImplementationTag details={implementation} />
+        <ImpactTag details={impact} />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="category-item__expand"
+        >
+          <g opacity="0.8">
+            <path
+              d="M7.415 8.21002L12 12.795L16.585 8.21002L18 9.62502L12 15.625L6 9.62502L7.415 8.21002Z"
+              fill="#3A3A3A"
+            />
+          </g>
+        </svg>
       </div>
     );
   }

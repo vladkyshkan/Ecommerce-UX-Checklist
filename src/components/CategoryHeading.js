@@ -43,7 +43,7 @@ class CategoryHeading extends Component {
                 </clipPath>
               </defs>
             </svg>
-            <span class="tooltiptext">Check all</span>
+            <span className="tooltiptext">Check all</span>
           </button>
           <button className="round-button">
             <svg
@@ -62,9 +62,9 @@ class CategoryHeading extends Component {
                 stroke="#00C193"
               />
             </svg>
-            <span class="tooltiptext">Uncheck all</span>
+            <span className="tooltiptext">Uncheck all</span>
           </button>
-          <button className="round-button">
+          <button className="round-button round-button__hide">
             <svg width="19" height="18" viewBox="0 0 19 18">
               <path
                 fill="#00C193"
@@ -72,7 +72,7 @@ class CategoryHeading extends Component {
                 transform="translate(0 1)"
               />
             </svg>
-            <span class="tooltiptext">Hide category</span>
+            <span className="tooltiptext">Hide category</span>
           </button>
         </div>
       </div>

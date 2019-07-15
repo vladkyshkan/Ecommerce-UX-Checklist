@@ -3,7 +3,8 @@ const guidelines = {
     name: "Homepage 🏠",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text:
+          "Display clear CTA button above the fold Display clear CTA button above the foldDisplay clear CTA button above the foldDisplay clear CTA button above the foldDisplay clear CTA button above the foldDisplay clear CTA button above the fold",
         implementation: "easy",
         impact: "high"
       },

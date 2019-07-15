@@ -1,13 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-class ButtonNav extends Component {
-  render() {
-    return (
-      <a class="button-nav" href={`#${this.props.details.name}`}>
-        {this.props.details.name}
-      </a>
-    );
-  }
-}
+const ButtonNav = props => {
+  return (
+    <a className="button-nav" href={`#${props.details}`}>
+      {props.details}
+    </a>
+  );
+};
 
 export default ButtonNav;
