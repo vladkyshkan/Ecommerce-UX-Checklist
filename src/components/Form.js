@@ -5,7 +5,7 @@ class Form extends Component {
     return (
       <div className="hero-form">
         <form>
-          <label className="label-hero">Project Name</label>
+          <label className="label-hero">Project name</label>
           <input className="input-hero" type="text" id="projectname" />
         </form>
         <form>

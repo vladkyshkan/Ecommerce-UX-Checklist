@@ -10,9 +10,8 @@ import ImplementationTag from "./ImplementationTag";
 import ImpactTag from "./ImpactTag";
 
 class CategoryItem extends Component {
-  handleCheckboxChange = (e, index) => {
-    // this.props.onChange(e.target.checked);
-    console.log(index);
+  handleCheckboxChange = e => {
+    this.props.onChange(e.target.checked, this.props.index);
   };
 
   render() {

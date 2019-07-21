@@ -5,9 +5,17 @@ class CategoryProgress extends Component {
     return (
       <div className="category-progress">
         <div className="category-progress_bar">
-          <span style={{ width: "25%" }} />
+          <span
+            className="category-progress_bar--animation"
+            style={{
+              width:
+                (100 / Object.keys(this.props.allNumber).length) *
+                Object.keys(this.props.checkedNumber).length
+            }}
+          />
         </div>
-        2/15 completed
+        {Object.keys(this.props.checkedNumber).length}/
+        {Object.keys(this.props.allNumber).length} completed
       </div>
     );
   }
