@@ -7,12 +7,7 @@ import guidelines from "../guidelines";
 
 class App extends Component {
   state = {
-    guidelines,
-    checkedItems: new Map()
-  };
-
-  onCheckboxChange = e => {
-    console.log(e.target.item);
+    guidelines
   };
 
   render() {
@@ -41,7 +36,6 @@ class App extends Component {
                 key={key}
                 index={key}
                 details={this.state.guidelines[key]}
-                onChange={this.onCheckboxChange}
               />
             ))}
           </ul>

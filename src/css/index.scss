@@ -101,6 +101,8 @@ button:focus {
   max-width: 61.25rem;
 }
 
+// Hero screen
+
 .hero-screen {
   display: flex;
   align-items: center;
@@ -213,6 +215,8 @@ input[type="text"] {
   z-index: -1;
 }
 
+// Navigation
+
 .navigation {
   margin: 80px 0;
   display: flex;
@@ -237,6 +241,8 @@ a.button-nav {
   color: rgba(0, 193, 147, 1);
 }
 
+// Categories
+
 .categories-list {
   padding: 0;
 }
@@ -249,7 +255,7 @@ a.button-nav {
 }
 
 .category-heading {
-  background-color: rgba(244, 240, 235, 0.8);
+  background-color: rgba(239, 244, 235, 0.8);
   padding: 24px 32px;
   margin: 0;
   display: flex;
@@ -428,6 +434,27 @@ a.button-nav {
   @extend .implementation-tag-hard;
   width: 45px;
 }
+
+// Accordion
+.accordion__button[aria-expanded="true"] > svg {
+  transform: rotate(180deg);
+}
+
+.accordion__button:hover {
+  cursor: pointer;
+}
+
+.accordion__button:focus {
+  outline: 0;
+}
+
+.accordion__panel {
+  background: rgba(250, 250, 250, 1);
+  padding: 16px 64px;
+  font-size: 14px;
+}
+
+// Footer
 
 .footer {
   background-color: rgba(242, 242, 242, 1);

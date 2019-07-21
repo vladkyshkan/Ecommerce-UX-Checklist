@@ -3,6 +3,20 @@ import CategoryItem from "./CategoryItem";
 import CategoryHeading from "./CategoryHeading";
 
 class Category extends Component {
+  state = {
+    categoryChecked: []
+  };
+
+  // onCheckboxChange = e => {
+  //   const categoryChecked = this.state.categoryChecked;
+  //   if (e) {
+  //     categoryChecked.push(+e.target.value);
+  //   } else {
+  //     console.log("error");
+  //   }
+  //   this.setState({ categoryChecked });
+  // };
+
   render() {
     const { name, list } = this.props.details;
 
@@ -21,7 +35,7 @@ class Category extends Component {
               key={key}
               index={key}
               details={list[key]}
-              onChange={this.props.onChange}
+              onChange={this.onCheckboxChange}
             />
           ))}
         </div>

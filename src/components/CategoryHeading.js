@@ -26,7 +26,7 @@ class CategoryHeading extends Component {
                 rx="3.5"
                 stroke="#00C193"
               />
-              <g clip-path="url(#clip0)">
+              <g clipPath="url(#clip0)">
                 <path
                   d="M6.50001 10.1L4.40001 7.99999L3.70001 8.69999L6.50001 11.5L12.5 5.49999L11.8 4.79999L6.50001 10.1Z"
                   fill="#00C193"
