@@ -114,6 +114,17 @@ button:focus {
   width: 50%;
 }
 
+.highlite {
+  background-image: linear-gradient(120deg, #00c1945b 0%, #00c1945b 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 10px;
+  background-position: 0 85%;
+}
+
+.hero-text {
+  color: rgba(135, 135, 135, 1);
+}
+
 .hero-form {
   background-color: white;
   padding: 32px 40px;
@@ -275,7 +286,7 @@ a.button-nav {
 
 .category-progress {
   color: rgba(58, 58, 58, 1);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .category-progress_bar {
@@ -380,7 +391,7 @@ a.button-nav {
 
 .category-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   max-width: 980px;
   padding: 24px 32px;
   border-top: 1px solid rgba(58, 58, 58, 0.1);
@@ -399,19 +410,19 @@ a.button-nav {
   line-height: 150%;
 }
 
-// .checkbox-hidden {
-//   display: none;
-// }
+.checkbox-hidden {
+  display: none;
+}
 
-// .checkbox-visible {
-//   position: relative;
-//   top: 2px;
-//   display: inline-block;
-//   width: 16px;
-//   height: 16px;
-//   border: 1px solid rgba(196, 196, 196, 1);
-//   border-radius: 4px;
-// }
+.checkbox-visible {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 4px;
+}
 
 .implementation-tag,
 .impact-tag {
@@ -452,7 +463,24 @@ a.button-nav {
   width: 45px;
 }
 
+// Checkbox selected
+input[type="checkbox"]:checked + span.checkbox-visible {
+  background-image: url(../images/checked.svg);
+}
+
+input[type="checkbox"]:checked
+  + span.checkbox-visible
+  + span.category-item__description {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 // Accordion
+.accordion__button {
+  position: relative;
+  top: 3px;
+}
+
 .accordion__button[aria-expanded="true"] > svg {
   transform: rotate(180deg);
 }

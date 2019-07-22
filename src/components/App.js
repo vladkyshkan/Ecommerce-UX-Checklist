@@ -17,10 +17,14 @@ class App extends Component {
           <div className="hero-screen">
             <div className="hero-title">
               <h4>Best practices</h4>
-              <h1>E-commerce project UX checklist</h1>
-              <p>
-                Improve shopping experience, delight customers and earn more
-                with these universal UX elements
+              <h1>
+                <span className="highlite">E-commerce</span> project UX
+                checklist
+              </h1>
+              <p className="hero-text">
+                Improve shopping experience, delight customers and bring more
+                revenue to business with these universal UX elements. But don't
+                forget that all solutions should be tested.
               </p>
             </div>
             <Form />
