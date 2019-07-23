@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ButtonNav from "./ButtonNav";
 import Category from "./Category";
-import Form from "./Form";
 import Footer from "./Footer";
 import guidelines from "../guidelines";
 
@@ -18,16 +17,15 @@ class App extends Component {
             <div className="hero-title">
               <h4>Best practices</h4>
               <h1>
-                <span className="highlite">E-commerce</span> project UX
-                checklist
+                <span className="highlite">E-commerce</span>
+                <br />
+                project UX checklist
               </h1>
               <p className="hero-text">
                 Improve shopping experience, delight customers and bring more
-                revenue to business with these universal UX elements. But don't
-                forget that all solutions should be tested.
+                revenue to business with universal UX elements
               </p>
             </div>
-            <Form />
           </div>
           <div className="navigation">
             {Object.keys(this.state.guidelines).map(key => (

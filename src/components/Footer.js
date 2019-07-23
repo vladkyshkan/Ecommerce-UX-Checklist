@@ -24,14 +24,6 @@ class Footer extends Component {
           Contact me
         </button>
         <p className="captcha">
-          Icons by Google from <a href="https://material.io">www.material.io</a>{" "}
-          is licensed under{" "}
-          <a href="https://www.apache.org/licenses/LICENSE-2.0">
-            Apache license version 2.0
-          </a>
-          .
-        </p>
-        <p className="captcha">
           Made by <a href="https://vladkyshkan.io">Vlad Kyshkan</a>
         </p>
       </div>

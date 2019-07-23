@@ -106,12 +106,13 @@ button:focus {
 .hero-screen {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 80px;
 }
 
 .hero-title {
   width: 50%;
+  text-align: center;
 }
 
 .highlite {
@@ -122,108 +123,8 @@ button:focus {
 }
 
 .hero-text {
-  color: rgba(135, 135, 135, 1);
-}
-
-.hero-form {
-  background-color: white;
-  padding: 32px 40px;
-  box-shadow: 0px 15px 40px rgba(165, 165, 165, 0.15);
-  border-radius: 10px;
-
-  &:after {
-    content: "";
-    position: absolute;
-    margin-left: -65px;
-    top: 145px;
-    width: 580px;
-    height: 350px;
-    z-index: -1;
-    background: url(images/pattern.svg) 0 0;
-  }
-}
-
-.input-hero {
-  width: 100%;
-  margin-top: 4px;
-  margin-bottom: 24px;
-  padding: 10px 16px;
-  background-color: rgba(246, 246, 246, 1);
-  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-  border: 1px solid transparent;
-}
-
-.input-hero:focus {
-  border: 1px solid rgba(58, 58, 58, 1);
-  outline: none;
-}
-
-input[type="text"] {
-  font-size: 14px;
-  color: rgba(58, 58, 58, 1);
-}
-
-.label-hero {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 150%;
-  color: rgba(58, 58, 58, 0.7);
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.button-generic {
-  width: 156px;
-  height: 40px;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-generic:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.button-main {
-  background-color: rgba(0, 193, 147, 1);
-  color: white;
-  border: none;
-}
-
-.button-secondary {
-  background-color: white;
-  color: rgba(235, 87, 87, 1);
-  border: 1px solid rgba(235, 87, 87, 1);
-}
-
-.button-icon {
-  margin-right: 6px;
-}
-
-.button-left {
-  margin-right: 12px;
-}
-
-.button-right {
-  margin-left: 12px;
-}
-
-.pattern {
-  position: absolute;
-  top: 140px;
-  right: 10px;
-  z-index: -1;
+  color: rgb(124, 124, 124);
+  margin: 16px 0 0 0;
 }
 
 // Navigation
@@ -277,6 +178,11 @@ a.button-nav {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px 10px 0 0;
+}
+
+.category-heading__round {
+  @extend .category-heading;
+  border-radius: 10px;
 }
 
 .category-heading__title {
@@ -408,6 +314,10 @@ a.button-nav {
   display: inline-block;
   width: 400px;
   line-height: 150%;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .checkbox-hidden {
@@ -422,6 +332,10 @@ a.button-nav {
   height: 16px;
   border: 1px solid rgba(196, 196, 196, 1);
   border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .implementation-tag,
@@ -508,6 +422,35 @@ input[type="checkbox"]:checked
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.button-generic {
+  width: 156px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-generic:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.button-main {
+  background-color: rgba(0, 193, 147, 1);
+  color: white;
+  border: none;
+}
+
+.button-icon {
+  margin-right: 6px;
 }
 
 .button-center {

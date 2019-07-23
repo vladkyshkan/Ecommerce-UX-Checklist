@@ -4,7 +4,11 @@ import CategoryProgress from "./CategoryProgress";
 class CategoryHeading extends Component {
   render() {
     return (
-      <div className="category-heading">
+      <div
+        className={
+          this.props.expanded ? "category-heading" : "category-heading__round"
+        }
+      >
         <div className="category-heading__title">
           <h3>{this.props.name}</h3>
           <CategoryProgress
