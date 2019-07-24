@@ -32,7 +32,7 @@ class Category extends Component {
 
     return (
       <div className="category">
-        <a id={`${name}`} />
+        <a id={`${name}`} href={`#${this.props.name}`} />
         <CategoryHeading
           name={name}
           expanded={this.state.expanded}

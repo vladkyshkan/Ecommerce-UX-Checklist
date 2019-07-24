@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(250, 250, 250, 1);
   color: rgba(58, 58, 58, 1);
-  border-top: 5px solid rgba(0, 193, 147, 1);
+  border-top: 4px solid rgba(0, 193, 147, 1);
 }
 
 @font-face {
@@ -146,11 +146,17 @@ a.button-nav {
   color: rgba(58, 58, 58, 1);
   font-weight: 500;
   margin: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .button-nav:hover {
   border: 2px solid rgba(0, 193, 147, 1);
   color: rgba(0, 193, 147, 1);
+}
+
+.button-nav__icon {
+  padding-right: 4px;
 }
 
 // Categories
@@ -178,6 +184,12 @@ a.button-nav {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px 10px 0 0;
+}
+
+.category-heading__icon {
+  padding-right: 8px;
+  position: relative;
+  top: 4px;
 }
 
 .category-heading__round {
@@ -238,13 +250,13 @@ a.button-nav {
 
 .round-button > svg {
   position: relative;
-  top: 2px;
+  top: 3px;
 }
 
 .round-button__hide > svg {
   position: relative;
   right: 2px;
-  top: 0px;
+  top: 1px;
 }
 
 .round-button__icon--hide {
@@ -430,7 +442,6 @@ input[type="checkbox"]:checked
   border-radius: 5px;
   font-size: 12px;
   font-weight: 500;
-  line-height: 150%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   display: flex;

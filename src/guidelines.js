@@ -1,6 +1,6 @@
 const guidelines = {
   guidelineTopic1: {
-    name: "🏠 Homepage",
+    name: "Homepage",
     list: {
       guideline1: {
         text:
@@ -67,7 +67,7 @@ const guidelines = {
   },
 
   guidelineTopic2: {
-    name: "🧭 Navigation",
+    name: "Navigation",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -96,7 +96,7 @@ const guidelines = {
   },
 
   guidelineTopic3: {
-    name: "🔍 Search",
+    name: "Search",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -107,7 +107,7 @@ const guidelines = {
   },
 
   guidelineTopic4: {
-    name: "🛍 Catalog & filters",
+    name: "Catalog & filters",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -118,7 +118,7 @@ const guidelines = {
   },
 
   guidelineTopic5: {
-    name: "👕 Product page",
+    name: "Product page",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -129,7 +129,7 @@ const guidelines = {
   },
 
   guidelineTopic6: {
-    name: "🛒 Cart",
+    name: "Cart",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -140,7 +140,7 @@ const guidelines = {
   },
 
   guidelineTopic7: {
-    name: "💳 Checkout",
+    name: "Checkout",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -151,7 +151,7 @@ const guidelines = {
   },
 
   guidelineTopic8: {
-    name: "👩‍💻 Account",
+    name: "Account",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -162,7 +162,7 @@ const guidelines = {
   },
 
   guidelineTopic9: {
-    name: "📄 Other",
+    name: "Other",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
@@ -173,7 +173,7 @@ const guidelines = {
   },
 
   guidelineTopic10: {
-    name: "📱 Mobile",
+    name: "Mobile",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
