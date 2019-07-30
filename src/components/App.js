@@ -23,7 +23,7 @@ class App extends Component {
               </h1>
               <p className="hero-text">
                 Improve shopping experience, delight customers and bring more
-                revenue to business with universal UX elements
+                revenue to business with these universal UX elements
               </p>
             </div>
           </div>

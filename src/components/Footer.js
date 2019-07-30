@@ -33,7 +33,8 @@ class Footer extends Component {
           Contact me
         </button>
         <p className="captcha">
-          Made by <a href="https://vladkyshkan.io">Vlad Kyshkan</a>
+          Designed and coded by{" "}
+          <a href="https://vladkyshkan.io">Vlad Kyshkan</a>
         </p>
       </div>
     );

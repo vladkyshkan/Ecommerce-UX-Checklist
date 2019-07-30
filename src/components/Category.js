@@ -5,26 +5,39 @@ import CategoryHeading from "./CategoryHeading";
 class Category extends Component {
   state = {
     expanded: true,
-    categoryChecked: []
+    checkedItems: {}
   };
+
+  // onCheckboxChange = (e, index) => {
+  //   const checkedItem = {
+  //     index,
+  //     checked: e
+  //   };
+  //   const checkedItems = this.state.checkedItems;
+  //   if (e) {
+  //     checkedItems[index] = checkedItem;
+  //   } else {
+  //     delete checkedItems[index];
+  //   }
+  //   this.setState({ checkedItems });
+  // };
+
+  // checkAll = e => {
+  //   let categoryDetails = this.state.categoryDetails;
+  //   Object.keys(categoryDetails).forEach(
+  //     item => (item.isChecked = e.target.checked)
+  //   );
+  //   this.setState({ categoryDetails });
+  // };
+
+  // uncheckAll = e => {
+  //   this.setState({
+  //     checkedItems: {}
+  //   });
+  // };
 
   toogleClass = () => {
     this.setState({ expanded: !this.state.expanded });
-  };
-
-  onCheckboxChange = (e, index) => {
-    const checkedItem = {
-      index,
-      status: e
-    };
-    const categoryChecked = this.state.categoryChecked;
-    if (e) {
-      categoryChecked.push(checkedItem);
-    } else {
-      let key = categoryChecked.indexOf(checkedItem);
-      categoryChecked.splice(key, 1);
-    }
-    this.setState({ categoryChecked });
   };
 
   render() {
@@ -36,9 +49,11 @@ class Category extends Component {
         <CategoryHeading
           name={name}
           expanded={this.state.expanded}
+          allNumber={list}
+          checkedNumber={this.state.checkedItems}
+          checkAll={this.checkAll}
+          uncheckAll={this.uncheckAll}
           hideSection={this.toogleClass}
-          allNumber={this.props.details.list}
-          checkedNumber={this.state.categoryChecked}
         />
         <div
           className={this.state.expanded ? null : "category__content--hidden"}

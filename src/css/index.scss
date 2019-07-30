@@ -51,6 +51,7 @@ h2 {
   text-align: center;
   max-width: 500px;
   margin-bottom: 24px;
+  color: #fff;
 }
 
 h3 {
@@ -84,12 +85,11 @@ p {
 
 a,
 a:visited {
-  color: rgba(47, 128, 237, 1);
-  text-decoration: none;
+  color: rgba(0, 193, 147, 1);
 }
 
 a:hover {
-  text-decoration: underline;
+  color: rgba(0, 193, 147, 0.5);
 }
 
 button:focus {
@@ -116,10 +116,7 @@ button:focus {
 }
 
 .highlite {
-  background-image: linear-gradient(120deg, #00c1945b 0%, #00c1945b 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 10px;
-  background-position: 0 85%;
+  color: rgba(0, 193, 147, 1);
 }
 
 .hero-text {
@@ -139,7 +136,7 @@ button:focus {
 a.button-nav {
   padding: 16px 24px;
   background-color: white;
-  box-shadow: 0px 15px 40px rgba(165, 165, 165, 0.15);
+  box-shadow: 0px 15px 20px rgba(165, 165, 165, 0.15);
   border: 2px solid rgba(0, 117, 106, 0);
   border-radius: 10px;
   text-decoration: none;
@@ -169,7 +166,7 @@ a.button-nav {
   margin-bottom: 80px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 15px 40px rgba(165, 165, 165, 0.15);
+  box-shadow: 0px 15px 20px rgba(165, 165, 165, 0.15);
 }
 
 .category__content--hidden {
@@ -177,7 +174,7 @@ a.button-nav {
 }
 
 .category-heading {
-  background-color: rgba(239, 246, 241, 1);
+  background-color: rgba(236, 255, 244, 0.3);
   padding: 24px 32px;
   margin: 0;
   display: flex;
@@ -428,7 +425,7 @@ input[type="checkbox"]:checked
 // Footer
 
 .footer {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgba(40, 48, 59, 1);
   padding: 64px;
   display: flex;
   justify-content: center;
@@ -470,4 +467,5 @@ input[type="checkbox"]:checked
 
 .captcha {
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
 }
