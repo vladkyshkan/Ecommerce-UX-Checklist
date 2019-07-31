@@ -22,7 +22,7 @@ class CategoryHeading extends Component {
           />
         </div>
         <div className="category-heading__buttons">
-          <button className="round-button" onClick={this.props.checkAll}>
+          <button className="round-button" onClick={this.props.selectAll}>
             <svg
               width="20"
               height="20"
@@ -57,7 +57,7 @@ class CategoryHeading extends Component {
             </svg>
             <span className="tooltiptext">Check all</span>
           </button>
-          <button className="round-button" onClick={this.props.uncheckAll}>
+          <button className="round-button" onClick={this.props.deselectAll}>
             <svg
               width="20"
               height="20"

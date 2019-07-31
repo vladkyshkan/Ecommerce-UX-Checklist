@@ -5,36 +5,42 @@ import CategoryHeading from "./CategoryHeading";
 class Category extends Component {
   state = {
     expanded: true,
-    checkedItems: {}
+    checkboxes: Object.keys(this.props.details.list).reduce(
+      (options, key) => ({
+        ...options,
+        [key]: false
+      }),
+      {}
+    )
   };
 
-  // onCheckboxChange = (e, index) => {
-  //   const checkedItem = {
-  //     index,
-  //     checked: e
-  //   };
-  //   const checkedItems = this.state.checkedItems;
-  //   if (e) {
-  //     checkedItems[index] = checkedItem;
-  //   } else {
-  //     delete checkedItems[index];
-  //   }
-  //   this.setState({ checkedItems });
-  // };
+  handleCheckboxChange = changeEvent => {
+    const { name } = changeEvent.target;
+    console.log(name);
 
-  // checkAll = e => {
-  //   let categoryDetails = this.state.categoryDetails;
-  //   Object.keys(categoryDetails).forEach(
-  //     item => (item.isChecked = e.target.checked)
-  //   );
-  //   this.setState({ categoryDetails });
-  // };
+    this.setState(prevState => ({
+      checkboxes: {
+        ...prevState.checkboxes,
+        [name]: !prevState.checkboxes[name]
+      }
+    }));
+  };
 
-  // uncheckAll = e => {
-  //   this.setState({
-  //     checkedItems: {}
-  //   });
-  // };
+  selectAllCheckboxes = isSelected => {
+    Object.keys(this.state.checkboxes).forEach(checkbox => {
+      // BONUS: Can you explain why we pass updater function to setState instead of an object?
+      this.setState(prevState => ({
+        checkboxes: {
+          ...prevState.checkboxes,
+          [checkbox]: isSelected
+        }
+      }));
+    });
+  };
+
+  selectAll = () => this.selectAllCheckboxes(true);
+
+  deselectAll = () => this.selectAllCheckboxes(false);
 
   toogleClass = () => {
     this.setState({ expanded: !this.state.expanded });
@@ -50,9 +56,9 @@ class Category extends Component {
           name={name}
           expanded={this.state.expanded}
           allNumber={list}
-          checkedNumber={this.state.checkedItems}
-          checkAll={this.checkAll}
-          uncheckAll={this.uncheckAll}
+          checkedNumber={this.state.checkboxes}
+          selectAll={this.selectAll}
+          deselectAll={this.deselectAll}
           hideSection={this.toogleClass}
         />
         <div
@@ -69,7 +75,8 @@ class Category extends Component {
                 key={key}
                 index={key}
                 details={list[key]}
-                onChange={this.onCheckboxChange}
+                isChecked={this.state.checkboxes[key]}
+                onChange={this.handleCheckboxChange}
               />
             ))}
           </div>

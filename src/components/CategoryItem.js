@@ -10,16 +10,15 @@ import ImplementationTag from "./ImplementationTag";
 import ImpactTag from "./ImpactTag";
 
 class CategoryItem extends Component {
-  // handleCheckboxChange = e => {
-  //   this.props.onChange(e.target.checked, this.props.index);
-  // };
+  handleCheckboxChange = e => {
+    this.props.onChange(e);
+  };
 
   render() {
     const {
       text,
       implementation,
       impact,
-      isChecked,
       description,
       link
     } = this.props.details;
@@ -30,11 +29,11 @@ class CategoryItem extends Component {
           <div className="category-item">
             <label className="category-checkbox">
               <input
+                name={this.props.index}
                 type="checkbox"
                 className="checkbox-hidden"
-                checked={isChecked}
-                value={text}
-                onChange={this.props.onChange}
+                checked={this.props.isChecked}
+                onChange={this.handleCheckboxChange}
               />
               <span className="checkbox-visible" />
               <span className="category-item__description">{text}</span>

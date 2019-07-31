@@ -7,7 +7,7 @@ const guidelines = {
           "Have a value prop at every point in the funnel, including category and product pages",
         implementation: "easy",
         impact: "high",
-        isChecked: false,
+        // isChecked: false,
         description:
           "Put your most compelling content above the fold. What makes your product or service interesting and valuable? Most people can and do scroll. Don’t be afraid to put content and even calls to action below the fold. ",
         link:
@@ -18,7 +18,7 @@ const guidelines = {
         text: "Clear benefit-oriented value prop above the fold",
         implementation: "hard",
         impact: "medium",
-        isChecked: false,
+        // isChecked: false,
         description:
           "It’s also the #1 thing that determines whether people will bother reading more about your product or hit the back button. On your site, your value proposition is the main thing you need to test—if you get it right, it will be a huge boost. ",
         link:
@@ -29,7 +29,7 @@ const guidelines = {
         text: "Remove automatic carousels",
         implementation: "medium",
         impact: "low",
-        isChecked: false,
+        // isChecked: false,
         description:
           "Almost all of the testing I’ve managed has proven content delivered via carousels to be missed by users. Few interact with them and many comment that they look like adverts and so we’ve witnessed the banner blindness concept in full effect. In terms of space saving and content promotion a lot of competing messages get delivered in a single position that can lead to focus being lost. ",
         link:
@@ -40,7 +40,7 @@ const guidelines = {
         text: "Clear benefit-oriented value prop above the fold",
         implementation: "hard",
         impact: "medium",
-        isChecked: false,
+        // isChecked: false,
         description:
           "It’s also the #1 thing that determines whether people will bother reading more about your product or hit the back button. On your site, your value proposition is the main thing you need to test—if you get it right, it will be a huge boost. ",
         link:
@@ -52,7 +52,7 @@ const guidelines = {
           "Have a value prop at every point in the funnel, including category and product pages",
         implementation: "easy",
         impact: "high",
-        isChecked: false,
+        // isChecked: false,
         description:
           "Put your most compelling content above the fold. What makes your product or service interesting and valuable? Most people can and do scroll. Don’t be afraid to put content and even calls to action below the fold. ",
         link:
@@ -63,7 +63,7 @@ const guidelines = {
         text: "Remove automatic carousels",
         implementation: "medium",
         impact: "low",
-        isChecked: false,
+        // isChecked: false,
         description:
           "Almost all of the testing I’ve managed has proven content delivered via carousels to be missed by users. Few interact with them and many comment that they look like adverts and so we’ve witnessed the banner blindness concept in full effect. In terms of space saving and content promotion a lot of competing messages get delivered in a single position that can lead to focus being lost. ",
         link:

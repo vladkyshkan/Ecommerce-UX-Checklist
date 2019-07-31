@@ -10,12 +10,18 @@ class CategoryProgress extends Component {
             style={{
               width:
                 (100 / Object.keys(this.props.allNumber).length) *
-                Object.keys(this.props.checkedNumber).length
+                Object.values(this.props.checkedNumber).reduce(
+                  (a, item) => a + item,
+                  0
+                )
             }}
           />
         </div>
-        {Object.keys(this.props.checkedNumber).length}/
-        {Object.keys(this.props.allNumber).length} completed
+        {Object.values(this.props.checkedNumber).reduce(
+          (a, item) => a + item,
+          0
+        )}
+        /{Object.keys(this.props.allNumber).length} completed
       </div>
     );
   }
