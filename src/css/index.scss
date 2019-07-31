@@ -349,21 +349,20 @@ a.button-nav {
 
 .implementation-tag,
 .impact-tag {
-  display: inline-block;
   width: 185px;
 }
 
 .implementation-tag-easy,
 .impact-tag-high {
+  display: inline-block;
   font-size: 12px;
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(111, 207, 151, 1);
-  border: 1px solid rgba(111, 207, 151, 1);
   border-radius: 4px;
   padding: 2px 8px;
-  width: 49px;
+  color: rgba(111, 207, 151, 1);
+  border: 1px solid rgba(111, 207, 151, 1);
 }
 
 .implementation-tag-medium,
@@ -371,19 +370,13 @@ a.button-nav {
   @extend .implementation-tag-easy;
   color: rgba(242, 201, 76, 1);
   border: 1px solid rgba(242, 201, 76, 1);
-  width: 68px;
 }
 
-.implementation-tag-hard {
+.implementation-tag-hard,
+.impact-tag-low {
   @extend .implementation-tag-easy;
   color: rgba(235, 87, 87, 1);
   border: 1px solid rgba(235, 87, 87, 1);
-  width: 51px;
-}
-
-.impact-tag-low {
-  @extend .implementation-tag-hard;
-  width: 45px;
 }
 
 // Checkbox selected
@@ -396,6 +389,13 @@ input[type="checkbox"]:checked
   + span.category-item__description {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.impact-tag-checked,
+.implementation-tag-checked {
+  @extend .impact-tag-high;
+  color: rgba(196, 196, 196, 1);
+  border: 1px solid rgba(196, 196, 196, 1);
 }
 
 // Accordion
@@ -448,7 +448,7 @@ input[type="checkbox"]:checked
 
 .button-generic:hover {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .button-main {

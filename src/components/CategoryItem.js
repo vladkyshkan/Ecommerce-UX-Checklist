@@ -38,8 +38,11 @@ class CategoryItem extends Component {
               <span className="checkbox-visible" />
               <span className="category-item__description">{text}</span>
             </label>
-            <ImplementationTag details={implementation} />
-            <ImpactTag details={impact} />
+            <ImplementationTag
+              details={implementation}
+              checked={this.props.isChecked}
+            />
+            <ImpactTag details={impact} checked={this.props.isChecked} />
             <AccordionItemButton className="accordion__button">
               <svg
                 width="24"
