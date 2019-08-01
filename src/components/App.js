@@ -15,6 +15,14 @@ class App extends Component {
         <div className="wrapper">
           <div className="hero-screen">
             <div className="hero-title">
+              <div className="hero-toggle">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span>
+                    <em />
+                  </span>
+                </label>
+              </div>
               <h4>Best practices</h4>
               <h1>
                 <span className="highlite">E-commerce</span>
