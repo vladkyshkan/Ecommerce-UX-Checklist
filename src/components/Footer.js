@@ -1,16 +1,68 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const FooterStyle = styled.div`
+  background-color: ${props => props.theme.colors.footer};
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const H2 = styled.h2`
+  font-size: 21px;
+  line-height: 29px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 24px;
+  color: #fff;
+`;
+
+const ButtonFooter = styled.button`
+  margin-bottom: 48px;
+  width: 156px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 193, 147, 1);
+  color: white;
+  border: none;
+
+  svg {
+    margin-right: 6px;
+  }
+
+  :hover {
+    cursor: pointer;
+    color: white;
+    opacity: 0.9;
+  }
+`;
+
+const Captcha = styled.p`
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+`;
 
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
-        <h2>
+      <FooterStyle>
+        <H2>
           If you have any suggestions or questions, don’t hesitate to reach me
-        </h2>
+        </H2>
         <a href="mailto:vladkyshkan@gmail.com">
-          <button className="button-generic button-main button-center">
+          <ButtonFooter>
             <svg
-              className="button-icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -32,13 +84,13 @@ class Footer extends Component {
               />
             </svg>
             Contact me
-          </button>
+          </ButtonFooter>
         </a>
-        <p className="captcha">
+        <Captcha>
           Designed and coded by{" "}
           <a href="https://vladkyshkan.io">Vlad Kyshkan</a>
-        </p>
-      </div>
+        </Captcha>
+      </FooterStyle>
     );
   }
 }

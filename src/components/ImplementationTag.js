@@ -1,17 +1,13 @@
 import React from "react";
+import styled from "styled-components";
+import { TagContainer, Tag } from "./Tag";
 
 const ImplementationTag = props => (
-  <div className="implementation-tag">
-    <div
-      className={
-        props.checked
-          ? "implementation-tag-checked"
-          : `implementation-tag-${props.details}`
-      }
-    >
+  <TagContainer>
+    <Tag details={props.details} checked={props.checked}>
       {props.details}
-    </div>
-  </div>
+    </Tag>
+  </TagContainer>
 );
 
 export default ImplementationTag;

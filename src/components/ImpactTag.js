@@ -1,15 +1,13 @@
 import React from "react";
+import styled from "styled-components";
+import { TagContainer, Tag } from "./Tag";
 
 const ImpactTag = props => (
-  <div className="impact-tag">
-    <div
-      className={
-        props.checked ? "impact-tag-checked" : `impact-tag-${props.details}`
-      }
-    >
+  <TagContainer>
+    <Tag details={props.details} checked={props.checked}>
       {props.details}
-    </div>
-  </div>
+    </Tag>
+  </TagContainer>
 );
 
 export default ImpactTag;
