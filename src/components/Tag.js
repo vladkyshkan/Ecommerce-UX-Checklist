@@ -24,7 +24,7 @@ const handleBackground = details => {
 
 const TagContainer = styled.div`
   display: block;
-  width: 185px;
+  flex-basis: 185px;
 `;
 
 const Tag = styled.div`

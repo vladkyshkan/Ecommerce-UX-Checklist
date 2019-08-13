@@ -46,8 +46,12 @@ const HeroScreen = styled.div`
 `;
 
 const HeroTitle = styled.div`
-  width: 50%;
+  width: 60%;
   text-align: center;
+
+  @media only screen and (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 const Navigation = styled.div`
@@ -59,6 +63,11 @@ const Navigation = styled.div`
 
 const CategoriesList = styled.ul`
   padding: 0;
+
+  @media only screen and (max-width: 1024px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 
 const ToggleContainer = styled.div`

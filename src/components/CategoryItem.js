@@ -35,6 +35,10 @@ const CategoryItemDescription = styled.span`
   :hover {
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 1024px) {
+    width: 300px;
+  }
 `;
 
 const AccordionItemButtonStyle = styled(AccordionItemButton)`

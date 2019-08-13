@@ -26,12 +26,19 @@ const CategoryTableTitles = styled.div`
   margin-left: 32px;
 
   ${H5}:first-child {
-    width: 432px;
-    margin-right: 96px;
+    /* width: 432px;
+    margin-right: 96px; */
+    width: 528px;
+
+    @media only screen and (max-width: 1024px) {
+      width: 428px;
+    }
   }
 
-  ${H5}:nth-child(2) {
-    margin-right: 96px;
+  // prettier-ignore
+  ${H5}:nth-child(2), ${H5}:nth-child(3) {
+    flex-basis: 185px;
+    /* margin-right: 96px; */
   }
 `;
 

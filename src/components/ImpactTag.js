@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { TagContainer, Tag } from "./Tag";
 
 const ImpactTag = props => (
