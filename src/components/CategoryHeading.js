@@ -15,6 +15,10 @@ const CategoryHeadingStyle = styled.div`
     position: relative;
     top: 4px;
   }
+
+  @media only screen and (max-width: 620px) {
+    padding: 16px 24px;
+  }
 `;
 
 const H3 = styled.h3`
@@ -24,6 +28,14 @@ const H3 = styled.h3`
   color: rgba(0, 193, 147, 1);
   margin: 0;
   padding-right: 24px;
+
+  @media only screen and (max-width: 768px) {
+    padding-right: 12px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 const CategoryHeadingTitle = styled.div`
@@ -84,6 +96,10 @@ const CategoryButton = styled.button`
 
   :focus {
     outline: 0;
+  }
+
+  @media only screen and (max-width: 420px) {
+    margin-left: 12px;
   }
 `;
 

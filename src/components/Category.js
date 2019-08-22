@@ -8,6 +8,10 @@ const CategoryStyle = styled.div`
   background-color: ${props => props.theme.colors.categoryBg};
   border-radius: 10px;
   box-shadow: 0px 15px 20px ${props => props.theme.colors.shadow};
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 64px;
+  }
 `;
 
 const H5 = styled.h5`

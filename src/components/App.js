@@ -16,6 +16,11 @@ const H1 = styled.h1`
   span {
     color: rgba(0, 193, 147, 1);
   }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 `;
 
 const H4 = styled.h4`
@@ -31,6 +36,11 @@ const Text = styled.p`
   line-height: 24px;
   color: ${props => props.theme.colors.description};
   margin: 16px 0 0 0;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -59,6 +69,10 @@ const Navigation = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media only screen and (max-width: 600px) {
+    margin: 64px 0;
+  }
 `;
 
 const CategoriesList = styled.ul`

@@ -18,6 +18,11 @@ const NavButton = styled.a`
     border: 2px solid rgba(0, 193, 147, 1);
     color: rgba(0, 193, 147, 1);
   }
+
+  @media only screen and (max-width: 600px) {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 `;
 
 const NavButtonIcon = styled.img`

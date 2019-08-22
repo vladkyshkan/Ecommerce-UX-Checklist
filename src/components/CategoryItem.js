@@ -26,6 +26,10 @@ const CategoryItemStyle = styled.div`
   max-width: 980px;
   padding: 24px 32px;
   border-top: 1px solid ${props => props.theme.colors.categoryItemBorder};
+
+  @media only screen and (max-width: 620px) {
+    padding: 16px 24px;
+  }
 `;
 
 const CheckboxLabel = styled.label`
@@ -57,6 +61,10 @@ const CategoryItemDescription = styled.span`
   @media only screen and (max-width: 820px) {
     width: 90%;
   }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 const AccordionItemButtonStyle = styled(AccordionItemButton)`
@@ -86,14 +94,21 @@ const AccordionItemPanelStyle = styled(AccordionItemPanel)`
   padding: 32px 64px;
   font-size: 14px;
   line-height: 21px;
+
+  @media only screen and (max-width: 620px) {
+    padding: 24px 56px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 `;
 
 const TagsMobile = styled.div`
   display: none;
 
   @media only screen and (max-width: 820px) {
-    /* display: flex;
-    padding: 0 64px 24px; */
     display: block;
     padding: 0 64px 24px;
 
@@ -101,6 +116,10 @@ const TagsMobile = styled.div`
       display: flex;
       align-items: center;
     }
+  }
+
+  @media only screen and (max-width: 620px) {
+    padding: 0 56px 16px;
   }
 `;
 
