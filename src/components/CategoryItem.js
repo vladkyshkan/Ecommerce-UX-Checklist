@@ -8,7 +8,17 @@ import {
 import Checkbox from "./Checkbox";
 import ImplementationTag from "./ImplementationTag";
 import ImpactTag from "./ImpactTag";
+import Image from "./Image";
 import styled from "styled-components";
+
+const H5 = styled.h5`
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: ${props => props.theme.colors.h5};
+  margin: 8px 8px 8px 0;
+  width: 100px;
+`;
 
 const CategoryItemStyle = styled.div`
   display: flex;
@@ -39,6 +49,14 @@ const CategoryItemDescription = styled.span`
   @media only screen and (max-width: 1024px) {
     width: 300px;
   }
+
+  @media only screen and (max-width: 875px) {
+    margin-right: 48px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    width: 90%;
+  }
 `;
 
 const AccordionItemButtonStyle = styled(AccordionItemButton)`
@@ -47,10 +65,11 @@ const AccordionItemButtonStyle = styled(AccordionItemButton)`
   background-image: ${props => props.theme.icons.categoryArrow};
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  margin-left: auto;
 
-  /* [aria-expanded="true"] {
+  &[aria-expanded="true"] {
     transform: rotate(180deg);
-  } */
+  }
 
   :hover {
     cursor: pointer;
@@ -64,9 +83,25 @@ const AccordionItemButtonStyle = styled(AccordionItemButton)`
 const AccordionItemPanelStyle = styled(AccordionItemPanel)`
   background: ${props => props.theme.colors.categoryDescriptionBg};
   color: ${props => props.theme.colors.categoryDescription};
-  padding: 16px 64px;
+  padding: 32px 64px;
   font-size: 14px;
   line-height: 21px;
+`;
+
+const TagsMobile = styled.div`
+  display: none;
+
+  @media only screen and (max-width: 820px) {
+    /* display: flex;
+    padding: 0 64px 24px; */
+    display: block;
+    padding: 0 64px 24px;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
 `;
 
 class CategoryItem extends Component {
@@ -79,6 +114,7 @@ class CategoryItem extends Component {
       text,
       implementation,
       impact,
+      image,
       description,
       link
     } = this.props.details;
@@ -104,7 +140,21 @@ class CategoryItem extends Component {
             <ImpactTag details={impact} checked={this.props.isChecked} />
             <AccordionItemButtonStyle />
           </CategoryItemStyle>
+          <TagsMobile>
+            <div>
+              <H5>Implementation:</H5>
+              <ImplementationTag
+                details={implementation}
+                checked={this.props.isChecked}
+              />
+            </div>
+            <div>
+              <H5>Impact:</H5>
+              <ImpactTag details={impact} checked={this.props.isChecked} />
+            </div>
+          </TagsMobile>
           <AccordionItemPanelStyle>
+            {image ? <Image src={image} /> : null}
             {description}
             <a href={link} target="_blank" rel="noopener noreferrer">
               Read more.

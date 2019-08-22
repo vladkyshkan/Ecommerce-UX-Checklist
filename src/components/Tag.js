@@ -24,7 +24,21 @@ const handleBackground = details => {
 
 const TagContainer = styled.div`
   display: block;
-  flex-basis: 185px;
+  width: 89px;
+  margin-right: 96px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-right: 64px;
+  }
+
+  @media only screen and (max-width: 910px) {
+    margin-right: 48px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    display: ${props => (props.hide ? "none" : "block")};
+    margin-right: 0;
+  }
 `;
 
 const Tag = styled.div`

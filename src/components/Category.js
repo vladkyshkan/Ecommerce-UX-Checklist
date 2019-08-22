@@ -23,22 +23,37 @@ const CategoryContent = styled.div`
 
 const CategoryTableTitles = styled.div`
   display: flex;
-  margin-left: 32px;
+
+  @media only screen and (max-width: 820px) {
+    display: none;
+  }
 
   ${H5}:first-child {
-    /* width: 432px;
-    margin-right: 96px; */
-    width: 528px;
+    width: 432px;
+    margin-right: 96px;
+    margin-left: 32px;
 
     @media only screen and (max-width: 1024px) {
-      width: 428px;
+      width: 380px;
+      margin-right: 48px;
+    }
+
+    @media only screen and (max-width: 875px) {
+      width: 332px;
     }
   }
 
   // prettier-ignore
-  ${H5}:nth-child(2), ${H5}:nth-child(3) {
-    flex-basis: 185px;
-    /* margin-right: 96px; */
+  ${H5}:nth-child(2) {
+    margin-right: 96px;
+
+    @media only screen and (max-width: 1024px) {
+      margin-right: 64px;
+    }
+
+    @media only screen and (max-width: 910px) {
+      margin-right: 48px;
+    }
   }
 `;
 

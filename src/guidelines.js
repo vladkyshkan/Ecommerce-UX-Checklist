@@ -7,6 +7,7 @@ const guidelines = {
           "Have a value prop at every point in the funnel, including category and product pages",
         implementation: "easy",
         impact: "high",
+        image: "images/image1.png",
         description:
           "Put your most compelling content above the fold. What makes your product or service interesting and valuable? Most people can and do scroll. Don’t be afraid to put content and even calls to action below the fold. ",
         link:
@@ -27,6 +28,7 @@ const guidelines = {
         text: "Remove automatic carousels",
         implementation: "medium",
         impact: "low",
+        image: "images/image1.png",
         description:
           "Almost all of the testing I’ve managed has proven content delivered via carousels to be missed by users. Few interact with them and many comment that they look like adverts and so we’ve witnessed the banner blindness concept in full effect. In terms of space saving and content promotion a lot of competing messages get delivered in a single position that can lead to focus being lost. ",
         link:

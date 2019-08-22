@@ -10,7 +10,7 @@ export default {
     categoryBg: "rgb(44, 53, 64)",
     categoryHeading: "rgba(20, 25, 34, 0.5)",
     categoryItemBorder: "rgba(255, 255, 255, 0.1)",
-    categoryDescriptionBg: "rgba(40, 48, 59)",
+    categoryDescriptionBg: "rgba(27, 33, 44)",
     categoryDescription: "rgba(255, 255, 255, 0.8)",
     progressBarBg: "rgb(52, 62, 76)",
     tooltip: "rgba(255, 255, 255, 1)",
