@@ -68,6 +68,10 @@ const Tooltip = styled.span`
     border-color: ${props => props.theme.colors.tooltip} transparent transparent
       transparent;
   }
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 const CategoryButton = styled.button`
@@ -101,11 +105,19 @@ const CategoryButton = styled.button`
   @media only screen and (max-width: 420px) {
     margin-left: 12px;
   }
+
+  @media only screen and (max-width: 374px) {
+    display: none;
+  }
 `;
 
 const CategoryButtonHide = styled(CategoryButton)`
   background-image: ${props =>
     props.expanded ? "url(./icons/eye.svg)" : "url(./icons/eye-closed.svg)"};
+
+  @media only screen and (max-width: 374px) {
+    display: inline-block;
+  }
 `;
 
 class CategoryHeading extends Component {

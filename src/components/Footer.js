@@ -8,6 +8,10 @@ const FooterStyle = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media only screen and (max-width: 400px) {
+    padding: 64px 32px;
+  }
 `;
 
 const H2 = styled.h2`
@@ -19,6 +23,11 @@ const H2 = styled.h2`
   max-width: 500px;
   margin-bottom: 24px;
   color: #fff;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
 
 const ButtonFooter = styled.button`
@@ -51,6 +60,10 @@ const ButtonFooter = styled.button`
 const Captcha = styled.p`
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
+
+  /* @media only screen and (max-width: 400px) {
+    font-size: 12px;
+  } */
 `;
 
 class Footer extends Component {

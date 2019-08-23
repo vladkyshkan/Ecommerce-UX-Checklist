@@ -109,7 +109,7 @@ const guidelines = {
   },
 
   guidelineTopic4: {
-    name: "Catalog & filters",
+    name: "Catalog",
     list: {
       guideline1: {
         text: "Display clear CTA button above the fold",
