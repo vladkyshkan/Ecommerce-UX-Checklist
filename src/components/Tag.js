@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 const handleColor = details => {
   switch (details) {
-    case "easy" || "high":
+    case "high":
+      return "rgba(111, 207, 151, 1)";
+    case "easy":
       return "rgba(111, 207, 151, 1)";
     case "medium":
       return "rgba(242, 201, 76, 1)";
@@ -13,7 +15,9 @@ const handleColor = details => {
 
 const handleBackground = details => {
   switch (details) {
-    case "easy" || "high":
+    case "high":
+      return "rgba(111, 207, 151, 0.2)";
+    case "easy":
       return "rgba(111, 207, 151, 0.2)";
     case "medium":
       return "rgba(242, 201, 76, 0.2)";

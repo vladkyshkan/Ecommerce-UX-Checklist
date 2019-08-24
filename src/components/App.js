@@ -181,8 +181,8 @@ class App extends Component {
                   project UX checklist
                 </H1>
                 <Text>
-                  Improve shopping experience, delight customers and bring more
-                  revenue to business with these universal UX elements
+                  Improve shopping experience, delight customers and make
+                  businesses more profitable with these universal UX elements
                 </Text>
               </HeroTitle>
             </HeroScreen>
