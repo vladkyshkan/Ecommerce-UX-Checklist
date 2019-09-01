@@ -27,6 +27,10 @@ const CategoryItemStyle = styled.div`
   padding: 24px 32px;
   border-top: 1px solid ${props => props.theme.colors.categoryItemBorder};
 
+  @media only screen and (max-width: 820px) {
+    align-items: flex-start;
+  }
+
   @media only screen and (max-width: 620px) {
     padding: 16px 24px;
   }
