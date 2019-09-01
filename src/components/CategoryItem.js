@@ -92,16 +92,16 @@ const AccordionItemPanelStyle = styled(AccordionItemPanel)`
   background: ${props => props.theme.colors.categoryDescriptionBg};
   color: ${props => props.theme.colors.categoryDescription};
   padding: 32px 64px;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 15px;
+  line-height: 23px;
 
   @media only screen and (max-width: 620px) {
     padding: 24px 56px;
   }
 
   @media only screen and (max-width: 600px) {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 20px;
   }
 `;
 
@@ -175,9 +175,11 @@ class CategoryItem extends Component {
           <AccordionItemPanelStyle>
             {image ? <Image src={image} /> : null}
             {description}
-            <a href={link} target="_blank" rel="noopener noreferrer">
-              Read more.
-            </a>
+            {link ? (
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                Read more.
+              </a>
+            ) : null}
           </AccordionItemPanelStyle>
         </AccordionItem>
       </Accordion>

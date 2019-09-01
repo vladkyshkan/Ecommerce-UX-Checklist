@@ -3,67 +3,52 @@ const guidelines = {
     name: "Homepage",
     list: {
       guideline1: {
-        text:
-          "Have a value prop at every point in the funnel, including category and product pages",
+        text: "Display clear value proposition above the fold",
         implementation: "easy",
         impact: "high",
-        image: "images/image1.png",
+        image: "images/image1.1.jpg",
         description:
-          "Put your most compelling content above the fold. What makes your product or service interesting and valuable? Most people can and do scroll. Don’t be afraid to put content and even calls to action below the fold. ",
-        link:
-          "https://conversionxl.com/blog/dont-use-automatic-image-sliders-or-carousels/"
+          "Put value proposition above the fold to indicate to potential customers what value they get upon buying your products and what makes you different from competitors. ",
+        link: "https://conversionxl.com/blog/above-the-fold/"
       },
 
       guideline2: {
-        text: "Clear benefit-oriented value prop above the fold",
-        implementation: "hard",
-        impact: "medium",
+        text: "Show the breadth of the product catalog on the homepage",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image1.2.jpg",
         description:
-          "It’s also the #1 thing that determines whether people will bother reading more about your product or hit the back button. On your site, your value proposition is the main thing you need to test—if you get it right, it will be a huge boost. ",
-        link:
-          "https://conversionxl.com/blog/dont-use-automatic-image-sliders-or-carousels/"
+          "To avoid misinterpretation regarding product range (especially if it is very broad) of your e-commerce website, feature different products on the homepage. ",
+        link: "https://baymard.com/blog/inferring-product-catalog-from-homepage"
       },
 
       guideline3: {
-        text: "Remove automatic carousels",
-        implementation: "medium",
-        impact: "low",
-        image: "images/image1.png",
+        text: "Personalize homepage content",
+        implementation: "hard",
+        impact: "high",
+        image: "images/image1.3.jpg",
         description:
-          "Almost all of the testing I’ve managed has proven content delivered via carousels to be missed by users. Few interact with them and many comment that they look like adverts and so we’ve witnessed the banner blindness concept in full effect. In terms of space saving and content promotion a lot of competing messages get delivered in a single position that can lead to focus being lost. ",
-        link:
-          "https://conversionxl.com/blog/dont-use-automatic-image-sliders-or-carousels/"
+          'Show personalize sections (e.g. "Recommended for you" or "Based on your searches") to increase relevance of the page for the user. ',
+        link: "https://sleeknote.com/blog/e-commerce-personalization"
       },
 
       guideline4: {
-        text: "Clear benefit-oriented value prop above the fold",
-        implementation: "hard",
+        text:
+          "Stop autorotating carousels on hover or after any user interaction with it",
+        implementation: "easy",
         impact: "medium",
         description:
-          "It’s also the #1 thing that determines whether people will bother reading more about your product or hit the back button. On your site, your value proposition is the main thing you need to test—if you get it right, it will be a huge boost. ",
-        link:
-          "https://conversionxl.com/blog/dont-use-automatic-image-sliders-or-carousels/"
+          "When the user hovers the carousel banner, he is usually interested in its content and therefore shouldn't be interrupted by banner switch. ",
+        link: "https://baymard.com/blog/homepage-carousel"
       },
 
       guideline5: {
-        text:
-          "Have a value prop at every point in the funnel, including category and product pages",
+        text: "Display key contact information",
         implementation: "easy",
-        impact: "high",
+        impact: "medium",
+        image: "images/image1.5.jpg",
         description:
-          "Put your most compelling content above the fold. What makes your product or service interesting and valuable? Most people can and do scroll. Don’t be afraid to put content and even calls to action below the fold. ",
-        link:
-          "https://conversionxl.com/blog/dont-use-automatic-image-sliders-or-carousels/"
-      },
-
-      guideline6: {
-        text: "Remove automatic carousels",
-        implementation: "medium",
-        impact: "low",
-        description:
-          "Almost all of the testing I’ve managed has proven content delivered via carousels to be missed by users. Few interact with them and many comment that they look like adverts and so we’ve witnessed the banner blindness concept in full effect. In terms of space saving and content promotion a lot of competing messages get delivered in a single position that can lead to focus being lost. ",
-        link:
-          "https://conversionxl.com/blog/dont-use-automatic-image-sliders-or-carousels/"
+          "Make it easy for a customer to get in touch with your store or request support."
       }
     }
   },
@@ -75,24 +60,6 @@ const guidelines = {
         text: "Display clear CTA button above the fold",
         implementation: "easy",
         impact: "high"
-      },
-
-      guideline2: {
-        text: "Clear benefit-oriented value prop above the fold",
-        implementation: "hard",
-        impact: "medium"
-      },
-
-      guideline3: {
-        text: "Remove automatic carousels",
-        implementation: "medium",
-        impact: "low"
-      },
-
-      guideline4: {
-        text: "Clear benefit-oriented value prop above the fold",
-        implementation: "hard",
-        impact: "medium"
       }
     }
   },

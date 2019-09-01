@@ -60,10 +60,6 @@ const ButtonFooter = styled.button`
 const Captcha = styled.p`
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
-
-  /* @media only screen and (max-width: 400px) {
-    font-size: 12px;
-  } */
 `;
 
 class Footer extends Component {
