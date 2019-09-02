@@ -128,9 +128,53 @@ const guidelines = {
     name: "Search",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text: "Make search box prominent",
         implementation: "easy",
-        impact: "high"
+        impact: "high",
+        image: "images/image3.1.jpg",
+        description:
+          "Show search box instead of search icon to help users find it more easily. ",
+        link: "https://baymard.com/blog/search-field-design"
+      },
+
+      guideline2: {
+        text: "Use autocomplete with error-correction",
+        implementation: "hard",
+        impact: "high",
+        image: "images/image3.2.jpg",
+        description:
+          "Save customer time by suggesting products and reducing the need to type whole query. ",
+        link: "https://pixelter.com/blog/search-autocomplete-best-practices/"
+      },
+
+      guideline3: {
+        text: "Show search history",
+        implementation: "medium",
+        impact: "medium",
+        image: "images/image3.3.jpg",
+        description:
+          "Very often people search for the same item repeatedly, even during one session. Save customer time by providing the option of repeating past searches. ",
+        link:
+          "https://www.nextopia.com/ecommerce-best-practices/storing-recent-searches"
+      },
+
+      guideline4: {
+        text: "Avoid zero results pages",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image3.4.jpg",
+        description:
+          "If nothing was found, show personalized recommendations, phone number or chat, recommendations to check spelling, try more general or another keyword. ",
+        link: "https://baymard.com/blog/no-results-page"
+      },
+
+      guideline5: {
+        text: "Display the total number of results",
+        implementation: "easy",
+        impact: "medium",
+        image: "images/image3.5.jpg",
+        description:
+          "Total number of results indicates to customer the quality of search query and helps him decide to scan results or enter new query."
       }
     }
   },
