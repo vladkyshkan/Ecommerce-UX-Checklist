@@ -1,3 +1,5 @@
+import { arrowFunctionExpression } from "@babel/types";
+
 const guidelines = {
   guidelineTopic1: {
     name: "Homepage",
@@ -13,7 +15,7 @@ const guidelines = {
       },
 
       guideline2: {
-        text: "Show the breadth of the product catalog on the homepage",
+        text: "Show the breadth of the product catalog on homepage",
         implementation: "medium",
         impact: "high",
         image: "images/image1.2.jpg",
@@ -183,9 +185,13 @@ const guidelines = {
     name: "Catalog",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text: "Make filters and sorting prominent",
         implementation: "easy",
-        impact: "high"
+        impact: "high",
+        image: "images/image4.1.jpg",
+        description:
+          "Show search box instead of search icon to help users find it more easily. ",
+        link: "https://baymard.com/blog/search-field-design"
       }
     }
   },
@@ -205,9 +211,60 @@ const guidelines = {
     name: "Cart",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text:
+          "Show drop-down cart or pop-up instead of redirecting to cart after a user adds an item",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image6.1.jpg",
+        description:
+          'Don\'t confuse a user and redirect him immediately to cart page. He might want to consider other items and doesn\'t ready to checkout yet. Instead show drop-down cart or pop-up with successfully added item, total sum and following actions, such as "Checkout Now" and "View Cart".'
+      },
+
+      guideline2: {
+        text: "Allow users to edit item in cart",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image6.2.jpg",
+        description:
+          "Allow users to easily edit items (quantity, size etc.) on the shopping cart page. They should not be removed from the cart or redirected back to the product page to edit item."
+      },
+
+      guideline3: {
+        text: "Allow users to move items to favorites or wishlist",
         implementation: "easy",
-        impact: "high"
+        impact: "medium",
+        image: "images/image6.3.jpg",
+        description:
+          "Don't make users to delete items they aren't ready to buy right now from cart and provide feature to save items for later. ",
+        link: "https://www.nngroup.com/articles/wishlist-or-cart/"
+      },
+
+      guideline4: {
+        text: "Show similar items or favorites for upsell in cart",
+        implementation: "medium",
+        impact: "medium",
+        image: "images/image6.4.jpg",
+        description:
+          "Maximize the shopping cart page by showing favorites, top selling items, last viewed items or complete the look with these products."
+      },
+
+      guideline5: {
+        text: "Show total cost (including shipping, taxes and fees)",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image6.5.jpg",
+        description:
+          "Customers dislike unexpected cost increases during checkout and if that happens could abandon checkout at all. To avoid this situation, show total cost in cart with the breakdown of this amount. ",
+        link: "https://www.nngroup.com/articles/ecommerce-taxes-fees/"
+      },
+
+      guideline6: {
+        text: "Consider offering free shipping on a certain amount",
+        implementation: "medium",
+        impact: "medium",
+        image: "images/image6.6.jpg",
+        description:
+          "Nudge customers to add more items to cart by offering free shipping after reaching a certain amount."
       }
     }
   },
