@@ -1,5 +1,3 @@
-import { arrowFunctionExpression } from "@babel/types";
-
 const guidelines = {
   guidelineTopic1: {
     name: "Homepage",
@@ -273,9 +271,84 @@ const guidelines = {
     name: "Checkout",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text: "Always allow a user to complete checkout as a guest",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image7.1.jpg",
+        description:
+          "According to Baymard Institute, ~35% of online transactions are dropped because of a required registration prompt. Users just don't want to spend time to create another account. ",
+        link:
+          "https://www.userzoom.com/blog/11-interesting-approaches-to-guest-checkout-design/"
+      },
+
+      guideline2: {
+        text: "Limit exit points during checkout",
         implementation: "easy",
-        impact: "high"
+        impact: "high",
+        image: "images/image7.2.jpg",
+        description:
+          "During checkout show only relevant information such as support number, delivery & payment information, terms & conditions and remove primary navigation and footer."
+      },
+
+      guideline3: {
+        text: "Place labels above input fields",
+        implementation: "easy",
+        impact: "high",
+        image: "images/image7.3.jpg",
+        description:
+          "Top-aligned labels allow users to scan and complete form as fast as possible. ",
+        link:
+          "https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php"
+      },
+
+      guideline4: {
+        text: "Avoid multi-column layouts",
+        implementation: "easy",
+        impact: "medium",
+        image: "images/image7.4.jpg",
+        description:
+          "Multiple columns are harder to scan and users may interpret forms inconsistently. ",
+        link: "https://baymard.com/blog/avoid-multi-column-forms"
+      },
+
+      guideline5: {
+        text: "Show progress bar if there are more than 2 steps in checkout",
+        implementation: "medium",
+        impact: "medium",
+        image: "images/image7.5.jpg",
+        description:
+          "Customers much more likely finish checkout process if they know where they are and how many steps left. ",
+        link:
+          "https://econsultancy.com/ecommerce-checkout-progress-indicators-essential-not-optional/"
+      },
+
+      guideline6: {
+        text: "Auto-format spaces in credit card number",
+        implementation: "medium",
+        impact: "medium",
+        image: "images/image7.6.jpg",
+        description:
+          "Auto-formatting can help users to avoid mistakes and more easily check if credit card number is correct. ",
+        link: "https://baymard.com/blog/credit-card-field-auto-format-spaces"
+      },
+
+      guideline7: {
+        text: "Show tooltip of the card security code placement",
+        implementation: "easy",
+        impact: "medium",
+        image: "images/image7.7.jpg",
+        description:
+          "A lot of users still don't know what is security code and where they can find it. Include tooltip to help users determine which code they need to enter."
+      },
+
+      guideline8: {
+        text: "Allow users to create account after checkout",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image7.8.jpg",
+        description:
+          "The best place to ask users to create account is at the order confirmation page. At this moment, the user has already filled all information and just need to create password to finish the process of registration. ",
+        link: "https://baymard.com/blog/delayed-account-creation"
       }
     }
   },
