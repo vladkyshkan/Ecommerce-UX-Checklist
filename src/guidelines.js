@@ -357,25 +357,47 @@ const guidelines = {
     name: "Account",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text: "Display the benefits of creating an account",
         implementation: "easy",
-        impact: "high"
+        impact: "high",
+        image: "images/image8.1.jpg",
+        description:
+          "During registration display all benefits of creating an account on your website, such as saved addresses, order tracking, faster checkout etc."
+      },
+
+      guideline2: {
+        text: "Display all password requirements upfront",
+        implementation: "easy",
+        impact: "medium",
+        image: "images/image8.2.jpg",
+        description:
+          "If password requirement are visible by default, users will avoid errors and create password much faster. ",
+        link: "https://www.nngroup.com/articles/password-creation/"
+      },
+
+      guideline3: {
+        text:
+          'Include "Unsubscribe from all" button, if there are multiple newsletters',
+        implementation: "medium",
+        impact: "medium",
+        image: "images/image8.3.jpg",
+        description:
+          "Save customers time by allowing to unsubscribe from all marketing emails in one click. ",
+        link: "https://www.nngroup.com/articles/unsubscribe-mistakes/"
+      },
+
+      guideline4: {
+        text: "Make default address label prominent",
+        implementation: "easy",
+        impact: "low",
+        image: "images/image8.4.jpg",
+        description:
+          "Explicitly indicate current default address and allow customers to select a new default address among saved addresses."
       }
     }
   },
 
   guidelineTopic9: {
-    name: "Other",
-    list: {
-      guideline1: {
-        text: "Display clear CTA button above the fold",
-        implementation: "easy",
-        impact: "high"
-      }
-    }
-  },
-
-  guidelineTopic10: {
     name: "Mobile",
     list: {
       guideline1: {
