@@ -34,7 +34,7 @@ const guidelines = {
 
       guideline4: {
         text:
-          "Stop autorotating carousels on hover or after any user interaction with it",
+          "Stop autorotating carousel on hover or after any user interaction with it",
         implementation: "easy",
         impact: "medium",
         description:
@@ -401,9 +401,62 @@ const guidelines = {
     name: "Mobile",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text: "Support mobile gestures",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image9.1.jpg",
+        description:
+          "Users expect to use gestures such as pinch or double-tap for zooming and swipe for navigation on mobile e-commerce websites. ",
+        link: "https://baymard.com/blog/mobile-image-gestures"
+      },
+
+      guideline2: {
+        text: "Display order summary at the top of the checkout page",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image9.2.jpg",
+        description:
+          "The order summary information (including subtotal, taxes, fees, discounts, and shipping charges) is critical for every user and should be easy to find on mobile checkout. ",
+        link: "https://www.nngroup.com/articles/mobile-checkout-ux/"
+      },
+
+      guideline3: {
+        text: "Match the keyboard with input type",
         implementation: "easy",
-        impact: "high"
+        impact: "medium",
+        image: "images/image9.3.jpg",
+        description:
+          "Provide users with the correct keyboard for specific form field inputs such as text, email, number or telephone. ",
+        link: "https://vlgux.com/blog/ux-tip-mobile-forms/"
+      },
+
+      guideline4: {
+        text: "Allow users to scan credit card",
+        implementation: "hard",
+        impact: "high",
+        image: "images/image9.4.jpg",
+        description:
+          "Allow users to take a photo of the credit card instead of typing in their information. ",
+        link: "http://babich.biz/mobile-card-payments/"
+      },
+
+      guideline5: {
+        text: "Determine delivery costs by asking the user’s current location",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image9.5.jpg",
+        description:
+          "Ask the user’s current location to calculate delivery costs prior to the checkout."
+      },
+
+      guideline6: {
+        text: 'Deemphasize or don\'t show "Install app" banner',
+        implementation: "easy",
+        impact: "medium",
+        image: "images/image9.6.jpg",
+        description:
+          '"Install App" banner could cover important content or elements as well as reduce the size of mobile viewport. ',
+        link: "https://baymard.com/blog/deemphasize-install-app-ads"
       }
     }
   }
