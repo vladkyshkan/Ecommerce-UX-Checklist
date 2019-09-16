@@ -151,7 +151,7 @@ const Toggle = styled.label`
 class App extends Component {
   state = {
     guidelines,
-    darkMode: false
+    darkMode: JSON.parse(localStorage.getItem("darkMode")) || false
   };
 
   toggleDarkMode = () => {
@@ -159,6 +159,10 @@ class App extends Component {
       darkMode: !prevState.darkMode
     }));
   };
+
+  componentDidUpdate() {
+    localStorage.setItem("darkMode", JSON.stringify(this.state.darkMode));
+  }
 
   render() {
     return (
@@ -169,8 +173,12 @@ class App extends Component {
             <HeroScreen>
               <HeroTitle>
                 <ToggleContainer>
-                  <Toggle onChange={this.toggleDarkMode}>
-                    <input type="checkbox" />
+                  <Toggle>
+                    <input
+                      type="checkbox"
+                      onChange={this.toggleDarkMode}
+                      checked={this.state.darkMode}
+                    />
                     <span />
                   </Toggle>
                 </ToggleContainer>
