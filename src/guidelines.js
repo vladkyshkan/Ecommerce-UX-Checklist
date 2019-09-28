@@ -28,7 +28,7 @@ const guidelines = {
         impact: "high",
         image: "images/image1.3.jpg",
         description:
-          'Show personalize sections (e.g. "Recommended for you" or "Based on your searches") to increase relevance of the page for the user. ',
+          "Show personalize sections (e.g. “Recommended for you” or “Based on your searches”) to increase relevance of the page for the user. ",
         link: "https://sleeknote.com/blog/e-commerce-personalization"
       },
 
@@ -78,7 +78,7 @@ const guidelines = {
       },
 
       guideline4: {
-        text: 'Show "New" and "Sale" as separate categories',
+        text: "Show “New” and “Sale” as separate categories",
         implementation: "medium",
         impact: "high",
         image: "images/image2.4.jpg",
@@ -183,13 +183,24 @@ const guidelines = {
     name: "Catalog",
     list: {
       guideline1: {
-        text: "Make filters and sorting prominent",
+        text:
+          "Use visual indicators to highlight new, exclusive, top selling or items on sale",
         implementation: "easy",
         impact: "high",
         image: "images/image4.1.jpg",
         description:
-          "Show search box instead of search icon to help users find it more easily. ",
-        link: "https://baymard.com/blog/search-field-design"
+          "Attract users' attention to featured items within a list of otherwise similar items. ",
+        link:
+          "https://www.nngroup.com/articles/visual-indicators-differentiators/"
+      },
+
+      guideline2: {
+        text:
+          "Display product variations such as available colors, styles or options",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image4.2.jpg",
+        description: ""
       }
     }
   },
@@ -215,7 +226,7 @@ const guidelines = {
         impact: "high",
         image: "images/image6.1.jpg",
         description:
-          'Don\'t confuse a user and redirect him immediately to cart page. He might want to consider other items and doesn\'t ready to checkout yet. Instead show drop-down cart or pop-up with successfully added item, total sum and following actions, such as "Checkout Now" and "View Cart".'
+          "Don't confuse a user and redirect him immediately to cart page. He might want to consider other items and doesn't ready to checkout yet. Instead show drop-down cart or pop-up with successfully added item, total sum and following actions, such as “Checkout Now” and “View Cart”."
       },
 
       guideline2: {
@@ -377,7 +388,7 @@ const guidelines = {
 
       guideline3: {
         text:
-          'Include "Unsubscribe from all" button, if there are multiple newsletters',
+          "Include “Unsubscribe from all” button, if there are multiple newsletters",
         implementation: "medium",
         impact: "medium",
         image: "images/image8.3.jpg",
@@ -432,7 +443,7 @@ const guidelines = {
 
       guideline4: {
         text: "Allow users to scan credit card",
-        implementation: "hard",
+        implementation: "medium",
         impact: "high",
         image: "images/image9.4.jpg",
         description:
@@ -450,12 +461,12 @@ const guidelines = {
       },
 
       guideline6: {
-        text: 'Deemphasize or don\'t show "Install app" banner',
+        text: "Deemphasize or don't show “Install app” banner",
         implementation: "easy",
         impact: "medium",
         image: "images/image9.6.jpg",
         description:
-          '"Install App" banner could cover important content or elements as well as reduce the size of mobile viewport. ',
+          "“Install App” banner could cover important content or elements as well as reduce the size of mobile viewport. ",
         link: "https://baymard.com/blog/deemphasize-install-app-ads"
       }
     }

@@ -25,7 +25,7 @@ const H3 = styled.h3`
   font-size: 21px;
   line-height: 25px;
   font-weight: 500;
-  color: rgba(0, 193, 147, 1);
+  color: ${props => props.theme.colors.h3};
   margin: 0;
   padding-right: 24px;
 

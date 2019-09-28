@@ -9,8 +9,8 @@ import Footer from "./Footer";
 import guidelines from "../guidelines";
 
 const H1 = styled.h1`
-  font-size: 48px;
-  line-height: 57px;
+  font-size: 56px;
+  line-height: 68px;
   font-weight: 700;
   margin: 0;
   span {
@@ -34,8 +34,8 @@ const H4 = styled.h4`
 
 const Text = styled.p`
   line-height: 24px;
-  color: ${props => props.theme.colors.description};
-  margin: 16px 0 0 0;
+  color: ${props => props.theme.colors.body};
+  margin: 24px 0 0 0;
 
   @media only screen and (max-width: 600px) {
     font-size: 14px;
