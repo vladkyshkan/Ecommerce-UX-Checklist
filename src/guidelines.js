@@ -180,7 +180,7 @@ const guidelines = {
   },
 
   guidelineTopic4: {
-    name: "Catalog",
+    name: "Product list",
     list: {
       guideline1: {
         text:
@@ -189,7 +189,7 @@ const guidelines = {
         impact: "high",
         image: "images/image4.1.jpg",
         description:
-          "Attract users' attention to featured items within a list of otherwise similar items. ",
+          "Attract customers' attention to featured items within a list of otherwise similar items. ",
         link:
           "https://www.nngroup.com/articles/visual-indicators-differentiators/"
       },
@@ -198,9 +198,48 @@ const guidelines = {
         text:
           "Display product variations such as available colors, styles or options",
         implementation: "medium",
-        impact: "high",
+        impact: "medium",
         image: "images/image4.2.jpg",
-        description: ""
+        description:
+          "Indicate different product variations (colors, materials, styles etc.) to the users so they are aware up front what they can find at the product page."
+      },
+
+      guideline3: {
+        text: "Show additional product details on hover",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image4.3.jpg",
+        description:
+          "Additional details could help users to better evalute the product and decide if it worth futher exploring. ",
+        link: "https://baymard.com/blog/secondary-hover-information"
+      },
+
+      guideline4: {
+        text: "Order filters by importance, not alphabetically",
+        implementation: "easy",
+        impact: "high",
+        image: "images/image4.4.jpg",
+        description: "Show filters by category relevance, not alphabetically."
+      },
+
+      guideline5: {
+        text: "Show number of matches for each filtering value",
+        implementation: "hard",
+        impact: "high",
+        image: "images/image4.5.jpg",
+        description:
+          "Let your customers know up front how many results they could get after applying certain filter so they could avoid too narrow filtering."
+      },
+
+      guideline6: {
+        text:
+          "Display all applied filters both as summary at the top of the page and in their original position",
+        implementation: "easy",
+        impact: "high",
+        image: "images/image4.6.jpg",
+        description:
+          "Allow users to easily find (and if needed deselect) all filters that are applied to the current product list. ",
+        link: "https://baymard.com/blog/how-to-design-applied-filters"
       }
     }
   },
