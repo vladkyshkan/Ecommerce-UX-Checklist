@@ -9,7 +9,7 @@
   <li>Homepage</li>
   <li>Navigation</li>
   <li>Search</li>
-  <li>Catalog</li>
+  <li>Product list</li>
   <li>Product page</li>
   <li>Cart</li>
   <li>Checkout</li>
