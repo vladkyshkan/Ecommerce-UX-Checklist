@@ -248,9 +248,83 @@ const guidelines = {
     name: "Product page",
     list: {
       guideline1: {
-        text: "Display clear CTA button above the fold",
+        text: "Show no less than 3-5 high-quality images for all products",
+        implementation: "hard",
+        impact: "high",
+        image: "images/image5.1.jpg",
+        description:
+          "Customers often want to see products from multiple angles and different proximities to better understand all their details. ",
+        link: "https://blog.saleslayer.com/product-photos-in-ecommerce"
+      },
+
+      guideline2: {
+        text: "Use thumbnails, not indicators to show product images",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image5.2.jpg",
+        description:
+          "Users could overlook indicators and don't find other photos of the product available on the page."
+      },
+
+      guideline3: {
+        text:
+          "Avoid dropdowns and show individual buttons for each available color, size etc.",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image5.3.jpg",
+        description:
+          "Users can't scan all available options of the product until open dropdown and selecting an option from dropdown list requires more clicks."
+      },
+
+      guideline4: {
+        text:
+          "Provide size chart with a measuring guide and international conversions",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image5.4.jpg",
+        description:
+          "Size chart could help customers to pick the right fitting clothes and reduce the number of order returns. ",
+        link:
+          "https://www.ilovefashionretail.com/user-experience/how-to-help-your-customers-pick-the-right-size-and-reduce-your-order-returns/"
+      },
+
+      guideline5: {
+        text: "Show model size and fit",
         implementation: "easy",
-        impact: "high"
+        impact: "medium",
+        image: "images/image5.5.jpg",
+        description:
+          "Customers could compare themselves to models at the product photos to get an idea whether size will fit them or not. "
+      },
+
+      guideline6: {
+        text: "Suggest alternative and supplementary products",
+        implementation: "medium",
+        impact: "high",
+        image: "images/image5.6.jpg",
+        description:
+          "Suggestions for alternative and supplementary products could improve the discovery of products on the site and increase the average order value. ",
+        link: "https://baymard.com/blog/product-page-suggestions"
+      },
+
+      guideline7: {
+        text: "Indicate already purchased products",
+        implementation: "easy",
+        impact: "medium",
+        image: "images/image5.7.jpg",
+        description:
+          "Let your customers know what products they have already bought to avoid accidental purchases."
+      },
+
+      guideline8: {
+        text: "Promote alternatives if a product is permanently unavailable",
+        implementation: "medium",
+        impact: "medium",
+        image: "images/image5.8.jpg",
+        description:
+          "In order not to lose customers that land on a product page that is permanently out of stock, suggest alternative products or offer in store options. ",
+        link:
+          "https://econsultancy.com/how-to-improve-customer-experience-when-products-are-out-of-stock/"
       }
     }
   },
@@ -260,7 +334,7 @@ const guidelines = {
     list: {
       guideline1: {
         text:
-          "Show drop-down cart or pop-up instead of redirecting to cart after a user adds an item",
+          "Show dropdown cart or pop-up instead of redirecting to cart after a user adds an item",
         implementation: "medium",
         impact: "high",
         image: "images/image6.1.jpg",

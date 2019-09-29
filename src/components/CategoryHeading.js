@@ -146,7 +146,7 @@ class CategoryHeading extends Component {
             expanded={this.props.expanded}
             onClick={this.props.hideSection}
           >
-            <Tooltip>{this.props.expanded ? "Hide" : "Show"} category</Tooltip>
+            <Tooltip>{this.props.expanded ? "Hide" : "Show"} section</Tooltip>
           </CategoryButtonHide>
         </div>
       </CategoryHeadingStyle>
