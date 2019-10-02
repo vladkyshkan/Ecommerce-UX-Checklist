@@ -190,7 +190,7 @@ class App extends Component {
                 </H1>
                 <Text>
                   Improve shopping experience, delight customers and make
-                  businesses more profitable with these universal UX elements
+                  business more profitable with these universal UX elements
                 </Text>
               </HeroTitle>
             </HeroScreen>
