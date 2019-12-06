@@ -92,6 +92,7 @@ const CategoryButton = styled.button`
 
   :hover {
     background-color: rgba(0, 193, 147, 0.2);
+    cursor: pointer;
   }
 
   :hover ${Tooltip} {
